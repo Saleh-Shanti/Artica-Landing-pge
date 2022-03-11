@@ -1,0 +1,221 @@
+/* General Styles */
+:root {
+  --Lato: "Lato", sans-serif;
+  --Molle: "Molle", cursive;
+  --Dark-blue: #161f32;
+  --blue: #546279;
+  --white: #f0f1f2;
+  --light-green: #00c7fc;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: calc(100vh - 62px);
+}
+.blue {
+  background-color: var(--blue);
+}
+.dark-blue {
+  background-color: var(--Dark-blue);
+}
+.color-dark {
+  color: var(--Dark-blue);
+}
+
+/* End General */
+.nav-link {
+  color: var(--white);
+}
+.nav-link.active,
+.nav-link:hover {
+  color: var(--light-green);
+}
+.navbar-brand {
+  font-family: var(--Molle);
+  color: var(--Dark-blue);
+  margin-left: 20%;
+}
+.navbar-toggler {
+  margin-right: 20%;
+}
+.navbar-collapse {
+  background-color: var(--Dark-blue);
+}
+.home-section {
+  margin-top: 62px;
+  /* background-color: var(--blue); */
+  background-image: url(../Images/home.webp);
+  background-size: cover;
+}
+.home {
+  background-color: var(--Dark-blue);
+}
+.brand-name {
+  font-family: var(--Molle);
+  color: var(--white);
+}
+
+.sec-heading::before {
+  content: "";
+  position: absolute;
+  margin: 3px 0;
+  width: 50%;
+  left: 50%;
+  bottom: -22px;
+  border-bottom: 1px solid var(--blue);
+  transform: translateX(-50%);
+}
+.sec-heading::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  margin: 3px;
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.sec-heading.dark-heading::before {
+  border-color: var(--white);
+}
+.sec-heading.dark-heading::after {
+  background-color: var(--Dark-blue);
+  border-color: var(--white);
+}
+.sec-heading.about::after {
+  background-color: var(--blue);
+}
+.section-heading-color {
+  color: var(--blue);
+}
+.sec-heading h3 {
+  color: var(--blue);
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.service-desc {
+  color: var(--blue);
+}
+.service-icon {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+.service-icon i {
+  color: white;
+}
+/* Portfolio Start */
+.category {
+  width: fit-content;
+  background-color: var(--Dark-blue);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.category.active,
+.category:hover {
+  background-color: var(--light-green);
+}
+
+.portfolio-desc::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-left: 20px solid var(--Dark-blue);
+  border-bottom: 20px solid var(--Dark-blue);
+  transform: rotate(133deg);
+  top: -2px;
+  left: 250px;
+}
+.category-desc > span {
+  position: absolute;
+  color: var(--white);
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.category-desc p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--white);
+}
+.arrow {
+  background-color: var(--Dark-blue);
+  max-width: fit-content;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+.arrow:hover {
+  background-color: var(--light-green);
+}
+/* Portfolio ENd */
+/* Start About  */
+.avatar svg {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.read-more-btn,
+.skill {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.skill:nth-child(1) {
+  width: 75%;
+}
+.skill:nth-child(2) {
+  width: 95%;
+}
+.skill:nth-child(3) {
+  width: 87%;
+}
+.skill:nth-child(4) {
+  width: 100%;
+}
+
+/* End About  */
+/* Start Blog */
+.blog-img-desc::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-left: 15px solid var(--Dark-blue);
+  border-bottom: 16px solid var(--Dark-blue);
+  transform: rotate(46deg);
+  top: 91px;
+  left: -12px;
+}
+
+/* End Blog */
+/* Start Contact Us */
+.send-message-btn {
+  background-color: var(--white);
+  color: var(--Dark-blue);
+  padding: 10px;
+}
+/* End Contact Us */
+
+/* Start Footer */
+footer {
+  border-top: 1px solid var(--white);
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+}
+footer h2:hover,
+a:hover {
+  color: var(--light-green);
+}
+/* End Footer */
